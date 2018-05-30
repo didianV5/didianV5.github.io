@@ -1,180 +1,901 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  
-  <title>我的博客</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="我的博客">
-<meta property="og:url" content="http://didianV5.github.io/index.html">
-<meta property="og:site_name" content="我的博客">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="我的博客">
-  
-    <link rel="alternate" href="/atom.xml" title="我的博客" type="application/atom+xml">
-  
-  
-    <link rel="icon" href="/favicon.png">
-  
-  
-    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
-  
-  <link rel="stylesheet" href="/css/style.css">
-  
-
+  <meta a=charset="utf-8">
+  <title>导航网站</title>
+  <link rel="stylesheet" href="index.css" href="moulem.css?version=18.15">
+  <script src="jquery-3.3.1.min.js" type='text/javascript'></script>
+  <!-- <script src='http://code.jquery.com/jquery-latest.js' type='text/javascript'></script> -->
+  <!-- <script src="Scripts/jquery-1.4.1-vsdoc.js" type="text/javascript"></script> -->
+	<!-- <script type="text/javascript" src='keyword.js?version=18.13'></script> -->
+  <!-- <script type="text/javascript" src='moulem.js?version=18.15'></script> -->
+  <!-- <script type="text/javascript" src='./node_modules/jquery/dist/jquery.js'></script> -->
+  <!-- <script type="text/javascript" src='./node_modules/jquery'></script> -->
+  <script type="text/javascript" src='./index1.js'></script>
+  <script type="text/javascript" src='./index2.js'></script>
+  <!-- <script type="text/javascript" src='./index3.js'></script> -->
+  <meta name="viewport"
+  content="width=device-width,
+  initial-scale=1.0,
+  minimum-scale=0.5,
+  maximum-scale=2.0,
+  user-scalable=yes" />
+  <!-- <script type="text/javascript">
+    $(document).ready(function () {
+        $('.sChoiceBtn').click(function () {
+            $(this).next('.scBigBox').show();
+            $('.scBigBox .scSmallBox').click(function () {
+                $('.sChoiceBtn').html($(this).text());
+                $('.scBigBox').hide();
+            });
+        });
+    });
+  </script> -->
 </head>
-
 <body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">我的博客</a>
-      </h1>
+  <div class="main">
+    <div class="first">
+      <div class="first_one">
+        <img src="./img/IPFS.png" class="first_one_img"></img>
+      </div>
+
+      <div class="first_two">
+        <div class="first_two_one">
+          <div class="searchChoice">
+            <div class="sChoiceBtn" title="切换搜索引擎"></div>
+            <div class="scBigBox">
+              <div class="scSmallBox">									
+                <img class="scImg" src="img/searchChoice/scbaidu.png">
+                <span class="scName">百度</span>
+              </div>
+              <div class="scSmallBox">
+                <img class="scImg" src="img/searchChoice/scsougou.png">
+                <span class="scName">搜狗</span>
+              </div>
+              <div class="scSmallBox">
+                <img class="scImg" src="img/searchChoice/scbing.png">
+                <span class="scName">必应</span>
+              </div>
+              <div class="scSmallBox">
+                <img class="scImg" src="img/searchChoice/sc360.png">
+                <span class="scName">360搜索</span>
+              </div>
+              <div class="scSmallBox">
+                <img class="scImg" src="img/searchChoice/scgoogle.png">
+                <span class="scName">Google</span>
+              </div>
+              <div class="scSmallBox">
+                <img class="scImg" src="img/searchChoice/sccili.png?v=1.2">
+                <span class="scName">磁力搜索</span>
+              </div>
+              <div class="scSmallBox">
+                <img class="scImg" src="img/searchChoice/scyingyin.png?v=1.2">
+                <span class="scName">影视搜索</span>
+              </div>							
+            </div>
+          </div>
+          <form action="https://www.baidu.com/s" method="GET" target="_blank" id="searchCheck">
+            <input class="first_two_input1" type="text" placeholder=" 请输入关键词搜索"  value x-webkit-speech lang="zh-CN" autocomplete="off"></input>
+            <input class="first_two_input2" type="submit" value=""></input>
+          </form>
+          <div class="keyword" style="display: none;height: auto;"></div>
+        </div> 
+      </div>
+
+      <div class="first_three">
+        <div class="first_three_one hZongheBtn">热门推荐</div>
+        <div class="first_three_one hGouwuBtn">区块链技术</div>
+        <div class="first_three_one hZixunBtn">行业资讯</div>
+        <div class="first_three_one hShejiaoBtn">交易理财</div>
+        <div class="first_three_one hYingyinBtn">钱包支付</div>
+        <div class="first_three_one hShenghuoBtn">挖矿算力</div>
+        <div class="first_three_one hGongjuBtn">金融科技</div>
+        <!-- <div class="first_three_one hItsiteBtn">区块链资产</div> -->
+        <div class="first_three_one hQuzhanBtn">区块链资产</div>
+      </div>
+
+      <div class="first_four_one hZonghe" data-count="12" style="display:flex;">
+        <a href="https://bitcoin.org/zh_CN/"
+        target="_blank" class="first_four_a">
+          <div class="first_four_a_img a_img1"></div>
+          <span class="first_four_a_span">比特币</span>
+        </a>
+        <a href="https://www.ethereum.org/"
+        target="_blank" class="first_four_a">
+          <div class="first_four_a_img a_img2"></div>
+          <span class="first_four_a_span">以太坊</span>
+        </a>
+        <a href="https://www.chainnews.com/"
+        target="_blank" class="first_four_a">
+         <div class="first_four_a_img a_img3"></div>
+         <span class="first_four_a_span">链闻</span>
+        </a>
+        <a href="https://www.bitmain.com/"
+        target="_blank" class="first_four_a">
+          <div class="first_four_a_img a_img4"></div>
+          <span class="first_four_a_span">比特大陆</span>
+        </a>
+        <a href="https://tokenview.com/"
+        target="_blank" class="first_four_a">
+          <div class="first_four_a_img a_img5"></div>
+          <span class="first_four_a_span">tokenview</span>
+        </a>
+        <a href="https://www.coinbase.com/"
+        target="_blank" class="first_four_a">
+          <div class="first_four_a_img a_img6"></div>
+          <span class="first_four_a_span">coinbase</span>
+        </a>
+        <a href="https://antpool.com/"
+        target="_blank" class="first_four_a">
+          <div class="first_four_a_img a_img7"></div>
+          <span class="first_four_a_span">蚂蚁矿池</span>
+        </a>
+        <a href="https://bitcoinmagazine.com/"
+        target="_blank" class="first_four_a">
+          <div class="first_four_a_img a_img9"></div>
+          <span class="first_four_a_span">比特币杂志</span>
+        </a>
+        <a href="http://www.8btc.com/"
+        target="_blank" class="first_four_a">
+          <div class="first_four_a_img a_img10"></div>
+          <span class="first_four_a_span">巴比特</span>
+        </a>
+        <a href="http://btc.top/"
+        target="_blank" class="first_four_a">
+          <div class="first_four_a_img a_img11"></div>
+          <span class="first_four_a_span">莱比特矿池</span>
+        </a>
+        <a href="https://www.bitfinex.com/"
+        target="_blank" class="first_four_a">
+          <div class="first_four_a_img a_img12"></div>
+          <span class="first_four_a_span">Bitfinex</span>
+        </a>
+        <a href="https://www.poloniex.com/"
+        target="_blank" class="first_four_a">
+          <div class="first_four_a_img a_img13"></div>
+          <span class="first_four_a_span">P网</span>
+        </a>
+        <a href="https://cn.bitcoin.com/"
+        target="_blank" class="first_four_a">
+          <div class="first_four_a_img a_img14"></div>
+          <span class="first_four_a_span">Bitcoin.com</span>
+        </a>
+        <a href="https://www.bibox.com/"
+        target="_blank" class="first_four_a">
+          <div class="first_four_a_img a_img15"></div>
+          <span class="first_four_a_span">Bibox</span>
+        </a>
+        <a href="https://www.bittrex.com/"
+        target="_blank" class="first_four_a">
+          <div class="first_four_a_img a_img16"></div>
+          <span class="first_four_a_span">乙网</span>
+        </a>
+        <a href="https://bitpay.com/"
+        target="_blank" class="first_four_a">
+          <div class="first_four_a_img a_img17"></div>
+          <span class="first_four_a_span">BitPay</span>
+        </a>
+        <a href="https://www.chainfor.com/"
+        target="_blank" class="first_four_a">
+          <div class="first_four_a_img a_img18"></div>
+          <span class="first_four_a_span">链向财经</span>
+        </a>
+        <a href="https://polkadot.network/"
+        target="_blank" class="first_four_a">
+          <div class="first_four_a_img a_img19"></div>
+          <span class="first_four_a_span">波尔卡圆点</span>
+        </a>
+        <a href="https://www.stateofthedapps.com/"
+        target="_blank" class="first_four_a">
+          <div class="first_four_a_img a_img20"></div>
+          <span class="first_four_a_span">以太坊应用</span>
+        </a>
+        <a href="https://www.jinse.com/"
+        target="_blank" class="first_four_a">
+          <div class="first_four_a_img a_img21"></div>
+          <span class="first_four_a_span">金色财经</span>
+        </a>
+        <a href="https://www.gdax.com/"
+        target="_blank" class="first_four_a">
+          <div class="first_four_a_img a_img22"></div>
+          <span class="first_four_a_span">GDAX</span>
+        </a>
+        <a href="https://xapo.com/"
+        target="_blank" class="first_four_a">
+          <div class="first_four_a_img a_img23"></div>
+          <span class="first_four_a_span">XAPO</span>
+        </a>
+        <a href="http://fortune.com/section/ledger/"
+        target="_blank" class="first_four_a">
+          <div class="first_four_a_img a_img24"></div>
+          <span class="first_four_a_span">财富杂志</span>
+        </a>
+        <a href="https://0xproject.com/"
+        target="_blank" class="first_four_a">
+          <div class="first_four_a_img a_img8"></div>
+          <span class="first_four_a_span">OX</span>
+        </a>
+      </div>
+
+      <div class="first_four_one hGouwu">
+        <a href="https://www.stateofthedapps.com/"
+        target="_blank" class="first_four_a">
+          <div class="first_four_a_img a_img20"></div>
+          <span class="first_four_a_span">以太坊应用</span>
+        </a>
+        <a href="https://www.cipherbrowser.com/"
+        target="_blank" class="first_four_a">
+          <div class="first_four_a_img a_img4"></div>
+          <span class="first_four_a_span">密码浏览器</span>
+        </a>
+        <a href="https://raiden.network/"
+        target="_blank" class="first_four_a">
+          <div class="first_four_a_img a_img1"></div>
+          <span class="first_four_a_span">雷电网络</span>
+        </a>
+        <a href="https://entethalliance.org/"
+        target="_blank" class="first_four_a">
+          <div class="first_four_a_img a_img15"></div>
+          <span class="first_four_a_span">企业以太坊联盟</span>
+        </a>
+        <a href="https://www.blockchainforsocialimpact.com/"
+        target="_blank" class="first_four_a">
+         <div class="first_four_a_img a_img3"></div>
+         <span class="first_four_a_span">社区影响联盟区块链</span>
+        </a>
+        <a href="https://ens.domains/"
+        target="_blank" class="first_four_a">
+          <div class="first_four_a_img a_img5"></div>
+          <span class="first_four_a_span">ENS</span>
+        </a>
+        <a href="https://ipfs.io/"
+        target="_blank" class="first_four_a">
+          <div class="first_four_a_img a_img6"></div>
+          <span class="first_four_a_span">星际文件系统</span>
+        </a>
+        <a href="https://cn.hyperledger.org/"
+        target="_blank" class="first_four_a">
+          <div class="first_four_a_img a_img25"></div>
+          <span class="first_four_a_span">超级账本</span>
+        </a>
+        <a href="https://eos.io/"
+        target="_blank" class="first_four_a">
+          <div class="first_four_a_img a_img26"></div>
+          <span class="first_four_a_span">EOS</span>
+        </a>
+        <a href="https://wanchain.org/"
+        target="_blank" class="first_four_a">
+          <div class="first_four_a_img a_img21"></div>
+          <span class="first_four_a_span">万维链</span>
+        </a>
+        <a href="https://www.blockchainresearchinstitute.org/"
+        target="_blank" class="first_four_a">
+          <div class="first_four_a_img a_img27"></div>
+          <span class="first_four_a_span">区块链研究所</span>
+        </a>
+        <a href="http://www.blockchainlabs.org/"
+        target="_blank" class="first_four_a">
+          <div class="first_four_a_img a_img28"></div>
+          <span class="first_four_a_span">万向区块链实验室</span>
+        </a>
+        <a href="https://www.ibm.com/blockchain/"
+        target="_blank" class="first_four_a">
+          <div class="first_four_a_img a_img29"></div>
+          <span class="first_four_a_span">IBM区块链</span>
+        </a>
+        <a href="https://lightning.engineering/"
+        target="_blank" class="first_four_a">
+          <div class="first_four_a_img a_img30"></div>
+          <span class="first_four_a_span">闪电实验室</span>
+        </a>
+        <a href="https://www.blockchainedu.org/"
+        target="_blank" class="first_four_a">
+          <div class="first_four_a_img a_img31"></div>
+          <span class="first_four_a_span">区块链教育网络</span>
+        </a>
+        <a href="https://www.cryptopp.com/"
+        target="_blank" class="first_four_a">
+          <div class="first_four_a_img a_img32"></div>
+          <span class="first_four_a_span">Crypto++</span>
+        </a>
+        <a href="https://www.block123.com/"
+        target="_blank" class="first_four_a">
+          <div class="first_four_a_img a_img33"></div>
+          <span class="first_four_a_span">加密谷</span>
+        </a>
+        <a href="https://bitcoinfoundation.org/"
+        target="_blank" class="first_four_a">
+          <div class="first_four_a_img a_img34"></div>
+          <span class="first_four_a_span">比特币基金会</span>
+        </a>
+      </div>
+
+      <div class="first_four_one hZixun">
+        <a href="https://www.chainfor.com/"
+        target="_blank" class="first_four_a">
+          <div class="first_four_a_img a_img12"></div>
+          <span class="first_four_a_span">链向财经</span>
+        </a>
+        <a href="http://www.bishijie.com/kuaixun/"
+        target="_blank" class="first_four_a">
+          <div class="first_four_a_img a_img22"></div>
+          <span class="first_four_a_span">币世界</span>
+        </a>
+        <a href="http://blockcast.it/"
+        target="_blank" class="first_four_a">
+          <div class="first_four_a_img a_img7"></div>
+          <span class="first_four_a_span">区块客</span>
+        </a>
+        <a href="https://ethfans.org/"
+        target="_blank" class="first_four_a">
+          <div class="first_four_a_img a_img35"></div>
+          <span class="first_four_a_span">以太坊爱好者</span>
+        </a>
+        <a href="http://www.bitecoin.com/"
+        target="_blank" class="first_four_a">
+          <div class="first_four_a_img a_img16"></div>
+          <span class="first_four_a_span">比特币中文网</span>
+        </a>
+        <a href="http://www.blockvalue.com/"
+        target="_blank" class="first_four_a">
+          <div class="first_four_a_img a_img36"></div>
+          <span class="first_four_a_span">价值区块链</span>
+        </a>
+        <a href="https://cn.bitcoin.com/" class="first_four_a" target="_blank">
+          <div class="first_four_a_img" style="background-position:0px -150px"></div>
+          <span class="first_four_a_span">Bitcoin.com</span>
+        </a>
+        <a href="http://www.8btc.com/" class="first_four_a" target="_blank">
+          <div class="first_four_a_img" style="background-position:-30px -150px"></div>
+          <span class="first_four_a_span">巴比特</span>
+        </a>
+        <a href="https://www.jinse.com/" class="first_four_a" target="_blank">
+          <div class="first_four_a_img" style="background-position:-60px -150px"></div>
+          <span class="first_four_a_span">金色财经</span>
+        </a>
+        <a href="https://www.chainnews.com/" class="first_four_a" target="_blank">
+          <div class="first_four_a_img" style="background-position:-90px -150px"></div>
+          <span class="first_four_a_span">链闻</span>
+        </a>
+        <a href="http://www.iotachina.com/" class="first_four_a" target="_blank">
+          <div class="first_four_a_img" style="background-position:-120px -150px"></div>
+          <span class="first_four_a_span">IOTA中国</span>
+        </a>
+        <a href="https://bitshuo.com/" class="first_four_a" target="_blank" >
+          <div class="first_four_a_img" style="background-position:-150px -150px"></div>
+          <span class="first_four_a_span">区块链技术中文社区</span>
+        </a>
+        <a href="https://ethfans.org/" class="first_four_a" target="_blank">
+          <div class="first_four_a_img" style="background-position:0px -210px"></div>
+          <span class="first_four_a_span">以太坊爱好者</span>
+        </a>
+        <a href="http://me.tryblockchain.org/" class="first_four_a" target="_blank">
+          <div class="first_four_a_img" style="background-position:-30px -210px"></div>
+          <span class="first_four_a_span">区块链技术博客</span>
+        </a>	
+        <a href="https://www.reddit.com/r/ethereum/" class="first_four_a" target="_blank">
+          <div class="first_four_a_img" style="background-position:-60px -210px"></div>
+          <span class="first_four_a_span">Reddit 以太坊区</span>
+        </a>
+        <a href="http://www.ethchinese.com/" class="first_four_a" target="_blank">
+          <div class="first_four_a_img" style="background-position:-120px -210px"></div>
+          <span class="first_four_a_span">以太中文网</span>
+        </a>
+        <a href="http://www.qukuai.top/" class="first_four_a" target="_blank">
+          <div class="first_four_a_img" style="background-position:-150px -210px"></div>
+          <span class="first_four_a_span">TOP区块链</span>
+        </a>
+        <a href="https://www.coindesk.com/" class="first_four_a" target="_blank">
+          <div class="first_four_a_img" style="background-position:-150px -180px"></div>
+          <span class="first_four_a_span">Coindesk</span>
+        </a>
+      </div>
+
+      <div class="first_four_one hShejiao">
+        <a href="https://www.binance.com/" class="first_four_a" target="_blank">
+          <div class="first_four_a_img" style="background-position:0px -270px"></div>
+          <span class="first_four_a_span">币安</span>
+        </a>
+        <a href="https://www.coinbase.com/" class="first_four_a" target="_blank">
+          <div class="first_four_a_img" style="background-position:-30px -270px"></div>
+          <span class="first_four_a_span">CoinBase</span>
+        </a>
+        <a href="https://www.bitfinex.com/" class="first_four_a" target="_blank">
+          <div class="first_four_a_img" style="background-position:-60px -270px"></div>
+          <span class="first_four_a_span">Bitfinex</span>
+        </a>
+        <a href="https://www.poloniex.com/" class="first_four_a" target="_blank">
+          <div class="first_four_a_img" style="background-position:-90px -270px"></div>
+          <span class="first_four_a_span">P网</span>
+        </a>
+        <a href="https://www.bibox.com/" class="first_four_a" target="_blank">
+          <div class="first_four_a_img" style="background-position:-120px -270px"></div>
+          <span class="first_four_a_span">Bibox</span>
+        </a>
+        <a href="https://www.bittrex.com/" class="first_four_a" target="_blank">
+          <div class="first_four_a_img" style="background-position:-150px -270px"></div>
+          <span class="first_four_a_span">B网</span>
+        </a>	
+        <a href="https://gateio.io/" class="first_four_a" target="_blank">
+          <div class="first_four_a_img" style="background-position:0px -330px"></div>
+          <span class="first_four_a_span">gateio</span>
+        </a>
+        <a href="https://www.bitkk.com/" class="first_four_a" target="_blank">
+          <div class="first_four_a_img" style="background-position:-30px -330px"></div>
+          <span class="first_four_a_span">中比特</span>
+        </a>
+        <a href="https://www.bit.cc/" class="first_four_a" target="_blank">
+          <div class="first_four_a_img" style="background-position:-60px -330px"></div>
+          <span class="first_four_a_span">Aex比特时代</span>
+        </a>
+        <a href="https://www.huobi.pro/topic/invited/?invite_code=null" class="first_four_a" target="_blank">
+          <div class="first_four_a_img" style="background-position:-90px -330px"></div>
+          <span class="first_four_a_span">火币</span>
+        </a>
+        <a href="https://bitshares.org/" class="first_four_a" target="_blank">
+          <div class="first_four_a_img" style="background-position:-120px -330px"></div>
+          <span class="first_four_a_span">比特股</span>
+        </a>
+        <a href="https://sosobtc.me/" class="first_four_a" target="_blank">
+          <div class="first_four_a_img" style="background-position:-150px -330px"></div>
+          <span class="first_four_a_span">sosobtc</span>
+        </a>
+        <a href="http://www.feixiaohao.com/" class="first_four_a" target="_blank" title="">
+          <div class="first_four_a_img" style="background-position:0px -240px"></div>
+          <span class="first_four_a_span">非小号</span>
+        </a>
+        <a href="https://bitkan.com/" class="first_four_a" target="_blank">
+          <div class="first_four_a_img" style="background-position:-30px -240px"></div>
+          <span class="first_four_a_span">币看</span>
+        </a>
+        <a href="http://www.coindaily.io/#/home" class="first_four_a" target="_blank">
+          <div class="first_four_a_img" style="background-position:-60px -240px"></div>
+          <span class="first_four_a_span">每日币读</span>
+        </a>
+        <a href="http://www.52ico.com/" class="first_four_a" target="_blank">
+          <div class="first_four_a_img" style="background-position:-90px -240px"></div>
+          <span class="first_four_a_span">ICO导航</span>
+        </a>
+        <a href="http://www.52ico.com/" class="first_four_a" target="_blank">
+          <div class="first_four_a_img" style="background-position:-120px -240px"></div>
+          <span class="first_four_a_span">DApp Review</span>
+        </a>
+        <!-- <a href="https://satofund.com/" class="first_four_a" target="_blank">
+          <div class="first_four_a_img" style="background-position:-150px -240px"></div>
+          <span class="first_four_a_span">SatoFund</span>
+        </a>	 -->
+      </div>
       
+      <div class="first_four_one hYingyin">
+        <a href="https://github.com/ethereum/mist/releases" class="first_four_a" target="_blank" title="">
+          <div class="first_four_a_img" style="background-position:0px -360px"></div>
+          <span class="first_four_a_span">Mist</span>
+        </a>
+        <a href="https://metamask.io/" class="first_four_a" target="_blank">
+          <div class="first_four_a_img" style="background-position:-30px -360px"></div>
+          <span class="first_four_a_span">Metamask</span>
+        </a>
+        <a href="https://www.myetherwallet.com/" class="first_four_a" target="_blank">
+          <div class="first_four_a_img" style="background-position:-60px -360px"></div>
+          <span class="first_four_a_span">MyEtherWallet</span>
+        </a>
+        <a href="https://wirexapp.com/zh-cn/" class="first_four_a" target="_blank">
+          <div class="first_four_a_img" style="background-position:-90px -360px"></div>
+          <span class="first_four_a_span">Wirex</span>
+        </a>
+        <a href="https://token.im/" class="first_four_a" target="_blank">
+          <div class="first_four_a_img" style="background-position:-120px -360px"></div>
+          <span class="first_four_a_span">imToken</span>
+        </a>
+        <a href="https://bixin.com/" class="first_four_a" target="_blank">
+          <div class="first_four_a_img" style="background-position:-150px -360px"></div>
+          <span class="first_four_a_span">币信</span>
+        </a>
+        <a href="https://bither.net/" class="first_four_a" target="_blank">
+          <div class="first_four_a_img" style="background-position:0px -420px"></div>
+          <span class="first_four_a_span">比太钱包</span>
+        </a>
+        <a href="https://www.kcash.com/" class="first_four_a" target="_blank">
+          <div class="first_four_a_img" style="background-position:-30px -420px"></div>
+          <span class="first_four_a_span">Kcash</span>
+        </a>
+        <a href="https://www.bao.top/" class="first_four_a" target="_blank">
+          <div class="first_four_a_img" style="background-position:-60px -420px"></div>
+          <span class="first_four_a_span">币包</span>
+        </a>
+        <a href="https://www.keepkey.com/" class="first_four_a" target="_blank">
+          <div class="first_four_a_img" style="background-position:-90px -420px"></div>
+          <span class="first_four_a_span">KeepKey</span>
+        </a>
+        <!-- <a href="https://copay.io/" class="first_four_a" target="_blank">
+          <div class="first_four_a_img" style="background-position:-30px -270px"></div>
+          <span class="first_four_a_span">AcFun</span>
+        </a>				 -->
+        <a href="https://www.bilibili.com/" class="first_four_a" target="_blank">
+          <div class="first_four_a_img" style="background-position:0px -270px"></div>
+          <span class="first_four_a_span">Copay</span>
+        </a>
+        <a href="https://wallet.btc.com/" class="first_four_a" target="_blank">
+          <div class="first_four_a_img" style="background-position:0px 0px"></div>
+          <span class="first_four_a_span">BTC.com钱包</span>
+        </a>
+        <a href="https://xapo.com/" class="first_four_a" target="_blank">
+          <div class="first_four_a_img" style="background-position:-30px -450px"></div>
+          <span class="first_four_a_span">Xapo</span>
+        </a>
+        <a href="http://ecoin.org/" class="first_four_a" target="_blank">
+          <div class="first_four_a_img" style="background-position:-60px -450px"></div>
+          <span class="first_four_a_span">Ecoin</span>
+        </a>
+        <a href="https://jaxx.io/" class="first_four_a" target="_blank">
+          <div class="first_four_a_img" style="background-position:-90px -450px"></div>
+          <span class="first_four_a_span">JAXX</span>
+        </a>
+        <!-- <a href="https://www.simplex.com/" class="first_four_a" target="_blank">
+          <div class="first_four_a_img" style="background-position:-120px -450px"></div>
+          <span class="first_four_a_span">simplex</span>
+        </a> -->
+        <a href="http://bitpie.com/" class="first_four_a" target="_blank">
+          <div class="first_four_a_img" style="background-position:-150px -450px"></div>
+          <span class="first_four_a_span">比特派</span>
+        </a>	 
+      </div>
+
+      <div class="first_four_one hShenghuo">
+        <a href="https://www.bitmain.com/" class="first_four_a" target="_blank" title="">
+          <div class="first_four_a_img1" style="background-position:0px 0px"></div>
+          <span class="first_four_a_span">比特大陆</span>
+        </a>
+        <a href="https://antpool.com/" class="first_four_a" target="_blank">
+          <div class="first_four_a_img1" style="background-position:-30px 0px"></div>
+          <span class="first_four_a_span">蚂蚁矿池</span>
+        </a>
+        <a href="http://btc.top/" class="first_four_a" target="_blank">
+          <div class="first_four_a_img1" style="background-position:-60px 0px"></div>
+          <span class="first_four_a_span">莱特币矿池</span>
+        </a>
+        <a href="https://www.bw.com/" class="first_four_a" target="_blank">
+          <div class="first_four_a_img1" style="background-position:-90px 0px"></div>
+          <span class="first_four_a_span">币网</span>
+        </a>
+        <a href="https://bixin.com/common/pool_landing" class="first_four_a" target="_blank">
+          <div class="first_four_a_img1" style="background-position:0px -30px"></div>
+          <span class="first_four_a_span">币信矿池</span>
+        </a>
+        <a href="https://ethgasstation.info/index.php?curr=cny" class="first_four_a" target="_blank">
+          <div class="first_four_a_img1" style="background-position:-30px -30px"></div>
+          <span class="first_four_a_span">ETH Gas Station</span>
+        </a>
+        <a href="https://www.suanlibao.com/" class="first_four_a" target="_blank">
+          <div class="first_four_a_img1" style="background-position:-60px -30px"></div>
+          <span class="first_four_a_span">算力宝</span>
+        </a>
+        <a href="https://pool.btc.com/" class="first_four_a" target="_blank">
+          <div class="first_four_a_img1" style="background-position:-90px -30px"></div>
+          <span class="first_four_a_span">BTC矿池</span>
+        </a>
+        <a href="https://stats.ethfans.org/" class="first_four_a" target="_blank">
+          <div class="first_four_a_img1" style="background-position:-120px -30px"></div>
+          <span class="first_four_a_span">星火节点数据</span>
+        </a>
+        <a href="http://www.butterflylabs.com/" class="first_four_a" target="_blank">
+          <div class="first_four_a_img1" style="background-position:-150px -30px"></div>
+          <span class="first_four_a_span">蝴蝶矿机</span>
+        </a>
+        <a href="http://www.mcc.top/" class="first_four_a" target="_blank">
+          <div class="first_four_a_img1" style="background-position:0px -60px"></div>
+          <span class="first_four_a_span">矿世云算</span>
+        </a>
+        <a href="https://www.hashnest.com/" class="first_four_a" target="_blank">
+          <div class="first_four_a_img1" style="background-position:-30px -60px"></div>
+          <span class="first_four_a_span">算力巢</span>
+        </a>
+        <a href="http://qukuai.com/search/zh-CN" class="first_four_a" target="_blank">
+          <div class="first_four_a_img1" style="background-position:-60px -60px"></div>
+          <span class="first_four_a_span">区块</span>
+        </a>
+        <a href="https://bitcoinwisdom.com/bitcoin/difficulty" class="first_four_a" target="_blank">
+          <div class="first_four_a_img1" style="background-position:-90px -60px"></div>
+          <span class="first_four_a_span">BitcoinWisdom</span>
+        </a>
+        <a href="http://p2pool.info/" class="first_four_a" target="_blank">
+          <div class="first_four_a_img1" style="background-position:-120px -60px"></div>
+          <span class="first_four_a_span">P2Pool</span>
+        </a>
+        <a href="https://eth.sparkpool.com/" class="first_four_a" target="_blank">
+          <div class="first_four_a_img1" style="background-position:-150px -60px"></div>
+          <span class="first_four_a_span">星火矿池</span>
+        </a>
+        <a href="https://eth.sparkpool.com/" class="first_four_a" target="_blank">
+          <div class="first_four_a_img1" style="background-position:-30px -90px"></div>
+          <span class="first_four_a_span">91Pool</span>
+        </a>
+        <a href="https://bitminter.com/" class="first_four_a" target="_blank">
+          <div class="first_four_a_img1" style="background-position:-60px -90px"></div>
+          <span class="first_four_a_span">BitMinter</span>
+        </a>
+
+      </div>
+
+      <div class="first_four_one hGongju">
+        <a href="https://wallstreetcn.com/" class="first_four_a" target="_blank" title="">
+          <div class="first_four_a_img1" style="background-position:0px -120px"></div>
+          <span class="first_four_a_span">华尔街见闻</span>
+        </a>
+        <a href="http://www.svinsight.com/" class="first_four_a" target="_blank">
+          <div class="first_four_a_img1" style="background-position:-30px -120px"></div>
+          <span class="first_four_a_span">硅谷密探</span>
+        </a>
+        <a href="http://36kr.com/" class="first_four_a" target="_blank">
+          <div class="first_four_a_img1" style="background-position:-60px -120px"></div>
+          <span class="first_four_a_span">36氪</span>
+        </a>
+        <a href="http://finance.sina.com.cn/" class="first_four_a" target="_blank">
+          <div class="first_four_a_img1" style="background-position:-90px -120px"></div>
+          <span class="first_four_a_span">新浪财经</span>
+        </a>
+        <a href="http://www.woshipm.com/" class="first_four_a" target="_blank">
+          <div class="first_four_a_img1" style="background-position:-120px -120px"></div>
+          <span class="first_four_a_span">人人都是产品经理</span>
+        </a>
+        <a href="http://www.jrj.com.cn/" class="first_four_a" target="_blank">
+          <div class="first_four_a_img1" style="background-position:-150px -120px"></div>
+          <span class="first_four_a_span">金融界</span>
+        </a>
+        <a href="http://www.aastocks.com/tc/default.aspx" class="first_four_a" target="_blank">
+          <div class="first_four_a_img1" style="background-position:0px -150px"></div>
+          <span class="first_four_a_span">阿斯达克财经网</span>
+        </a>
+        <a href="http://www.caixin.com/" class="first_four_a" target="_blank">
+          <div class="first_four_a_img1" style="background-position:-30px -150px"></div>
+          <span class="first_four_a_span">财新网</span>
+        </a>
+        <a href="http://www.ctoutiao.com/" class="first_four_a" target="_blank">
+          <div class="first_four_a_img1" style="background-position:-60px -150px"></div>
+          <span class="first_four_a_span">创头条</span>
+        </a>
+        <a href="http://www.caijing.com.cn/" class="first_four_a" target="_blank">
+          <div class="first_four_a_img1" style="background-position:-90px -150px"></div>
+          <span class="first_four_a_span">财经网</span>
+        </a>
+        <a href="http://www.tmtpost.com/" class="first_four_a" target="_blank">
+          <div class="first_four_a_img1" style="background-position:0px -30px"></div>
+          <span class="first_four_a_span">钛媒体</span>
+        </a>
+        <a href="http://www.gemag.com.cn/" class="first_four_a" target="_blank">
+          <div class="first_four_a_img1" style="background-position:-150px -150px"></div>
+          <span class="first_four_a_span">环球企业家</span>
+        </a>
+        <a href="http://finance.chinanews.com/" class="first_four_a" target="_blank">
+          <div class="first_four_a_img1" style="background-position:0px -180px"></div>
+          <span class="first_four_a_span">中新网财经</span>
+        </a>
+        <a href="http://www.ifanr.com/" class="first_four_a" target="_blank">
+          <div class="first_four_a_img1" style="background-position:-30px -180px"></div>
+          <span class="first_four_a_span">爱范儿</span>
+        </a>
+        <a href="http://www.cb.com.cn/" class="first_four_a" target="_blank">
+          <div class="first_four_a_img1" style="background-position:-60px -180px"></div>
+          <span class="first_four_a_span">中国经营网</span>
+        </a>
+        <a href="http://cn.reuters.com/" class="first_four_a" target="_blank">
+          <div class="first_four_a_img1" style="background-position:-90px -180px"></div>
+          <span class="first_four_a_span">路透社</span>
+        </a>
+        <a href="https://www.technologyreview.com/" class="first_four_a" target="_blank">
+          <div class="first_four_a_img1" style="background-position:-120px -180px"></div>
+          <span class="first_four_a_span">麻省理工科技评论</span>
+        </a>
+        <a href="http://finance.ifeng.com/" class="first_four_a" target="_blank">
+          <div class="first_four_a_img1" style="background-position:-150px -180px"></div>
+          <span class="first_four_a_span">凤凰财经</span>
+        </a>
+        <a href="https://www.startmeup.hk/" class="first_four_a" target="_blank">
+          <div class="first_four_a_img1" style="background-position:0px -210px"></div>
+          <span class="first_four_a_span">Startmeup</span>
+        </a>
+        <a href="http://www.cafi.org.cn/" class="first_four_a" target="_blank">
+          <div class="first_four_a_img1" style="background-position:-30px -210px"></div>
+          <span class="first_four_a_span">中国普惠金融研究院</span>
+        </a>
+        <a href="http://www.sfi.org.cn/" class="first_four_a" target="_blank">
+          <div class="first_four_a_img1" style="background-position:-60px -210px"></div>
+          <span class="first_four_a_span">上海新金融研究院</span>
+        </a>
+        <!-- <a href="https://www.geekbang.org/" class="first_four_a" target="_blank">
+          <div class="first_four_a_img1" style="background-position:-90px -210px"></div>
+          <span class="first_four_a_span">极客邦</span>
+        </a> -->
+        <!-- <a href="http://www.nifa.org.cn/nifa/index.html" class="first_four_a" target="_blank">
+          <div class="first_four_a_img" style="background-position:-150px -450px"></div>
+          <span class="first_four_a_span">中国互联网金融协会</span>
+        </a>
+        <a href="http://www.dca.org.cn/" class="first_four_a" target="_blank">
+          <div class="first_four_a_img1" style="background-position:-150px -210px"></div>
+          <span class="first_four_a_span">数据中心联盟</span>
+        </a> -->
+      </div>
+
+      <!-- <div class="first_four_one hItsite">
+        <a href="https://github.com/" class="first_four_a" target="_blank">
+          <div class="first_four_a_img1" style="background-position:0px -300px"></div>
+          <span class="first_four_a_span">Github</span>
+        </a>
+        <a href="https://stackoverflow.com/" class="first_four_a" target="_blank">
+          <div class="first_four_a_img1" style="background-position:-30px -300px"></div>
+          <span class="first_four_a_span">Stack Ove...</span>
+        </a>
+        <a href="https://www.csdn.net/" class="first_four_a" target="_blank">
+          <div class="first_four_a_img1" style="background-position:-60px -300px"></div>
+          <span class="first_four_a_span">CSDN</span>
+        </a>
+        <a href="http://www.w3school.com.cn/" class="first_four_a" target="_blank">
+          <div class="first_four_a_img1" style="background-position:-90px -300px"></div>
+          <span class="first_four_a_span">W3C School</span>
+        </a>
+        <a href="https://www.reddit.com/" class="first_four_a" target="_blank">
+          <div class="first_four_a_img1" style="background-position:-120px -300px"></div>
+          <span class="first_four_a_span">Reddit</span>
+        </a>
+        <a href="https://www.v2ex.com/" class="first_four_a" target="_blank">
+          <div class="first_four_a_img1" style="background-position:-150px -240px"></div>
+          <span class="first_four_a_span">V2EX</span>
+        </a>
+        <a href="https://500px.com/" class="first_four_a" target="_blank">
+          <div class="first_four_a_img1" style="background-position:-60px -270px"></div>
+          <span class="first_four_a_span">500px</span>
+        </a>	
+        <a href="http://www.58pic.com/" class="first_four_a" target="_blank">
+          <div class="first_four_a_img1" style="background-position:-90px -270px"></div>
+          <span class="first_four_a_span">千图网</span>
+        </a>
+        <a href="http://www.nipic.com/" class="first_four_a" target="_blank">
+          <div class="first_four_a_img1" style="background-position:-120px -270px"></div>
+          <span class="first_four_a_span">昵图网</span>
+        </a>
+        <a href="http://www.uisdc.com/" class="first_four_a" target="_blank">
+          <div class="first_four_a_img1" style="background-position:-150px -270px"></div>
+          <span class="first_four_a_span">优设网</span>
+        </a>
+        <a href="http://www.zcool.com.cn/" class="first_four_a" target="_blank" title="">
+          <div class="first_four_a_img1" style="background-position:0px -330px"></div>
+          <span class="first_four_a_span">站酷</span>
+        </a>
+        <a href="https://www.behance.net/" class="first_four_a" target="_blank">
+          <div class="first_four_a_img1" style="background-position:-30px -240px"></div>
+          <span class="first_four_a_span">Behance</span>
+        </a>
+        <a href="http://www.infoq.com/cn" class="first_four_a" target="_blank">
+          <div class="first_four_a_img1" style="background-position:0px -330px"></div>
+          <span class="first_four_a_span">InfoQ</span>
+        </a>
+        <a href="https://leetcode-cn.com//" class="first_four_a" target="_blank">
+          <div class="first_four_a_img1" style="background-position:-30px -330px"></div>
+          <span class="first_four_a_span">Leetcode</span>
+        </a>
+        <a href="https://s.click.taobao.com/t?e=m%3D2%26s%3DgJjAybL3Ix8cQipKwQzePCperVdZeJviEViQ0P1Vf2kguMN8XjClAjxtsteLklsTNDhVHT%2FGEz98VnVCsm%2B7V%2FVezbbQauan6gEE6W29H8TFtCexIUkk2xVF%2BG%2F2LD3qKIUZKvQyk4%2FkxFiXT%2FI5kZuVJ2zJE2c0p3fRQ0ORdflbmmsujxxDvMYMXU3NNCg%2F" class="first_four_a" target="_blank">
+          <div class="first_four_a_img1" style="background-position:-60px -330px"></div>
+          <span class="first_four_a_span">阿里云</span>
+        </a>
+        <a href="https://cloud.tencent.com/" class="first_four_a" target="_blank">
+          <div class="first_four_a_img1" style="background-position:-90px -330px"></div>
+          <span class="first_four_a_span">腾讯云</span>
+        </a>
+        <a href="http://www.chinaz.com/" class="first_four_a" target="_blank">
+          <div class="first_four_a_img1" style="background-position:-120px -330px"></div>
+          <span class="first_four_a_span">站长之家</span>
+        </a>
+        <a href="http://index.baidu.com/" class="first_four_a" target="_blank">
+          <div class="first_four_a_img1" style="background-position:-150px -330px"></div>
+          <span class="first_four_a_span">百度指数</span>
+        </a>
+
+      </div> -->
+      
+      <div class="first_four_one hQuzhan">
+        <a href="https://bitcoin.org/zh_CN/" class="first_four_a" target="_blank">
+          <div class="first_four_a_img1" style="background-position:-30px -180px"></div>
+          <span class="first_four_a_span">比特币</span>
+        </a>
+        <a href="https://www.ethereum.org/" class="first_four_a" target="_blank">
+          <div class="first_four_a_img2" style="background-position:-30px -60px"></div>
+          <span class="first_four_a_span">以太坊</span>
+        </a>
+        <a href="https://litecoin.org/cn/" class="first_four_a" target="_blank">
+          <div class="first_four_a_img2" style="background-position:-60px -60px"></div>
+          <span class="first_four_a_span">莱特币</span>
+        </a>
+        <a href="https://ripple.com/" class="first_four_a" target="_blank">
+          <div class="first_four_a_img2" style="background-position:-90px -60px"></div>
+          <span class="first_four_a_span">瑞波币</span>
+        </a>
+        <a href="https://getmonero.org/" class="first_four_a" target="_blank">
+          <div class="first_four_a_img2" style="background-position:-120px -60px"></div>
+          <span class="first_four_a_span">门罗币</span>
+        </a>
+        <a href="https://www.bitcoincash.org/" class="first_four_a" target="_blank">
+          <div class="first_four_a_img2" style="background-position:-150px -60px"></div>
+          <span class="first_four_a_span">比特币现金</span>
+        </a>
+        <a href="https://ethereumclassic.github.io/" class="first_four_a" target="_blank">
+          <div class="first_four_a_img2" style="background-position:0px -90px"></div>
+          <span class="first_four_a_span">以太经典</span>
+        </a>
+        <a href="https://www.ardorplatform.org/" class="first_four_a" target="_blank">
+          <div class="first_four_a_img2" style="background-position:-30px -90px"></div>
+          <span class="first_four_a_span">阿朵</span>
+        </a>
+        <a href="https://www.dash.org/cn/" class="first_four_a" target="_blank">
+          <div class="first_four_a_img2" style="background-position:-60px -90px"></div>
+          <span class="first_four_a_span">达世币</span>
+        </a>
+        <a href="https://z.cash/zh/index.html" class="first_four_a" target="_blank">
+          <div class="first_four_a_img2" style="background-position:-90px -90px"></div>
+          <span class="first_four_a_span">Zcash</span>
+        </a>
+        <a href="https://stratisplatform.com/zh-CN/" class="first_four_a" target="_blank">
+          <div class="first_four_a_img2" style="background-position:-120px -90px"></div>
+          <span class="first_four_a_span">斯特拉</span>
+        </a>
+        <a href="https://www.stellar.org/" class="first_four_a" target="_blank">
+          <div class="first_four_a_img2" style="background-position:-150px -90px"></div>
+          <span class="first_four_a_span">恒星币</span>
+        </a>	
+        <a href="https://nxtplatform.org/" class="first_four_a" target="_blank">
+          <div class="first_four_a_img2" style="background-position:0px 0px"></div>
+          <span class="first_four_a_span">未来币</span>
+        </a>
+        <a href="http://blackcoin.co/" class="first_four_a" target="_blank">
+          <div class="first_four_a_img2" style="background-position:-30px 0px"></div>
+          <span class="first_four_a_span">黑币</span>
+        </a>
+        <a href="https://zh-cn.bitcoin.it/" class="first_four_a" target="_blank">
+          <div class="first_four_a_img2" style="background-position:-60px 0px"></div>
+          <span class="first_four_a_span">Lisk</span>
+        </a>
+        <a href="https://zh-cn.bitcoin.it/" class="first_four_a" target="_blank">
+          <div class="first_four_a_img2" style="background-position:-90px 0px"></div>
+          <span class="first_four_a_span">比特币维基</span>
+        </a>
+        <a href="https://peercoin.net/" class="first_four_a" target="_blank" >
+          <div class="first_four_a_img2" style="background-position:-120px 0px"></div>
+          <span class="first_four_a_span">点点币</span>
+        </a>
+        <!-- <a href="https://projectradium.org/" class="first_four_a" target="_blank">
+          <div class="first_four_a_img2" style="background-position:-150px 0px"></div>
+          <span class="first_four_a_span">Radium</span>
+        </a> -->
+      </div>
+
     </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"></a>
-        
-          <a class="main-nav-link" href="/">Home</a>
-        
-          <a class="main-nav-link" href="/archives">Archives</a>
-        
-      </nav>
-      <nav id="sub-nav">
-        
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
-        
-        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://didianV5.github.io"></form>
+
+    <!-- <div class="second"></div> -->
+  </div>
+  <div class="second">
+    <div class="second_one">
+      <div class="second_one_one">
+        <div class="second_one_div">关于我们</div>
+        <div class="second_one_div">mostchain.com</div>
+      </div>
+      <div class="second_one_one">
+        <div class="second_one_div">联系我们</div>
+        <div class="second_one_div">my1994email@163.com</div>
+      </div>
+      <div class="second_one_one">
+        <div class="second_one_div">留言板</div>
       </div>
     </div>
-  </div>
-</header>
-      <div class="outer">
-        <section id="main">
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2017/02/16/hello-world/" class="article-date">
-  <time datetime="2017-02-16T08:03:09.000Z" itemprop="datePublished">2017-02-16</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/02/16/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://didianV5.github.io/2017/02/16/hello-world/" data-id="ciz83w5gj0000qwastarf3927" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-
-</section>
-        
-          <aside id="sidebar">
-  
-    
-
-  
-    
-
-  
-    
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/02/">February 2017</a></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/2017/02/16/hello-world/">Hello World</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
-
-  
-</aside>
-        
+    <div class="second_two">
+      <div class="second_two_one">
+        <img src="./img/public.jpg" class="second_two_img1"></img>
+        <p class="second_one_div">公众号</p>
       </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      &copy; 2017 fujinliang<br>
-      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+      <div class="second_two_one">
+        <img src="./img/wechat.png" class="second_two_img2"></img>
+        <p class="second_one_div">扫一扫关注我们</p>
+      </div>
     </div>
-  </div>
-</footer>
-    </div>
-    <nav id="mobile-nav">
-  
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
-</nav>
-    
-
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-
-
-  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
-  <script src="/fancybox/jquery.fancybox.pack.js"></script>
-
-
-<script src="/js/script.js"></script>
-
   </div>
 </body>
+
 </html>
