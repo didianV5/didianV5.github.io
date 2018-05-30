@@ -98,7 +98,7 @@ $(document).ready(function(){
         }
         if(event.which!=39&&event.which!=40&&event.which!=37&&event.which!=38&&event.which!=13)
         $.ajax({
-            url:"https://suggestion.baidu.com/su",
+            url:"http://suggestion.baidu.com/su",
             type:"GET",
             dataType:"jsonp",
             jsonp: 'jsoncallback',
